@@ -1,0 +1,42 @@
+{
+  "debug": false,
+  "vote_max": 50,
+  "times_total": 20,
+  "times_reload": 500,
+  "time_sleep_random_start": 15,
+  "time_sleep_random_end": 40,
+  "url": "http://iqingyun.cyol.com/vw/16/279490.html",
+  "executable_path": "xxx",
+  "savepath": ".txt",
+  "counts": [
+    {
+      "url": "http://xxx/paihangbang",
+      "xpaths": [
+        {
+          "format": "①姓名:%s",
+          "path": "//*[@id='GridView0']/tbody/tr[2]/td[2]/a"
+        },
+        {
+          "format": ",票数:%s",
+          "path": "//*[@id='GridView0']/tbody/tr[2]/td[4]/a"
+        },
+        {
+          "format": ";②姓名:%s",
+          "path": "//*[@id='GridView0']/tbody/tr[3]/td[2]/a"
+        },
+        {
+          "format": ",票数:%s",
+          "path": "//*[@id='GridView0']/tbody/tr[3]/td[4]/a"
+        },
+        {
+          "format": ";③姓名:%s",
+          "path": "//*[@id='GridView0']/tbody/tr[4]/td[2]/a"
+        },
+        {
+          "format": ",票数:%s",
+          "path": "//*[@id='GridView0']/tbody/tr[4]/td[4]/a"
+        }
+      ]
+    }
+  ]
+}
