@@ -1,6 +1,7 @@
 import socket
 
 s = socket.socket()
+# 获取本地 IP 地址
 ip_address = socket.gethostbyname(socket.gethostname())
 
 s.bind((ip_address, 8888))
@@ -13,14 +14,14 @@ while True:
     connection, client_address = s.accept()
     try:
         print('connected from', client_address)
-        connection.send(str("now you are connected").encode("utf-8"))
+        connection.send(str("你已成功连接").encode("utf-8"))
 
         while True:
             data = connection.recv(1024).decode("utf-8")
             if data:
                 print(list(client_address)[0], end="")
                 print(":%s" % data)
-                new_data = str(input("You:")).encode("utf-8")
+                new_data = str(input("请输入要发送的消息:")).encode("utf-8")
                 connection.send(new_data)
     finally:
         connection.close()

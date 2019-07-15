@@ -8,8 +8,8 @@ def main():
     def change_label_text():
         nonlocal flag
         flag = not flag
-        color, msg = ('red', 'Hello,GUI') \
-            if flag else ('blue', "GoodBye GUI")
+        color, msg = ('red', 'Hello,gui') \
+            if flag else ('blue', "GoodBye gui")
         label.config(text=msg, fg=color)
 
     def confirm_to_quit():
