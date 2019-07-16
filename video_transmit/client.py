@@ -8,8 +8,8 @@ address = ('192.168.12.128', 8080)  # 设置地址与端口，如果是接收任
 
 class ServerSocket(object):
     def __init__(self):
-        # socket.AF_INET用于服务器与服务器之间的网络通信
-        # socket.SOCK_STREAM代表基于TCP的流式socket通信
+        # socket_practice.AF_INET用于服务器与服务器之间的网络通信
+        # socket_practice.SOCK_STREAM代表基于TCP的流式socket通信
         self.server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.server_socket.bind(address)  # 将Socket（套接字）绑定到地址
         self.server_socket.listen(True)  # 开始监听TCP传入连接
